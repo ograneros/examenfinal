@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>RPUNTO RECLAMO</title>
+	<meta http-equiv="Content-type" content="text/html" charset="utf-8">
+	<script type="text/javascript" src="index++.js"></script>
+</head>
+<body>
+	<div id="contenedor">
+		<form id="formulario" name="formulario" method="post" action="">
+			<h2>REGISTRO DE RECLAMO</h2>
+				<table>
+					<tr>
+						<td>Codigo:</td>
+						<td><input type="text" name="codigo" id="codigo"></td>
+					</tr>
+					<tr>
+						<td>C.I.:</td>
+						<td><input type="text" name="ci" id="ci"></td>
+					</tr>
+					<tr>
+						<td>Nombre: </td>
+						<td><input type="text" name="nombre" id="nombre"></td>
+					</tr>
+					<tr>
+						<td>Fecha del Reclamo:</td>
+						<td><input type="text" name="fecha" id="fecha"></td>
+					</tr>
+					<tr>
+						<td>Tipo de Oficina:</td>
+						<td>
+							<select name="tipo">
+								<option value="Oficina Central">Oficina Central</option>
+								<option value="Sucursal">Sucursal</option>
+								<option value="Agencia">Agencia</option>
+							</select></td>
+					</tr>
+				
+					<tr>
+						<td></td>
+						<td><input type="submit" name="boton" id="boton" value='Enviar'>
+						
+					</tr>
+				</table>		
+		</form>
+		<br>
+		<br>
+		<label>Titulo:</label>
+		<input type="text" name="deleteClave" id="deleteClave">
+		<input type="submit" name="delete" id='delete' value="Borrar"></td>	
+	</div>
+</body>
+</html>
