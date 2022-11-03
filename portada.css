@@ -1,0 +1,126 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 1.5px;
+}
+.contenedor {
+  margin: auto;
+  width: 99%;
+}
+
+}
+
+
+/*--------------Estilos de banner--------------*/
+
+.banner {
+  margin-top: -150px;
+  position: absolute;
+  z-index: -1000;
+  margin-bottom: 50px;
+}
+
+.banner .contenedor {
+  position: absolute;
+  top:  20%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color: green;
+  text-align: center;
+}
+
+.banner__txt {
+  display: none;
+}
+
+/*-----------------Estilos de cajas-----------------*/
+.info__columna {
+  background: #FBA919;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+/*------------------Estilos responsivos------------------*/
+
+@media(min-width:480px) {
+  .banner__titulo {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  .banner__txt {
+    display: block;
+    font-size: 18px;
+    margin: 7px 0;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -90px;
+  }
+  .info__columna {
+    width: 30%;
+    line-height: 50%;
+  }
+  .info__titulo {
+    font-size: 30px;
+    margin: 10px 0;
+}
+@media(min-width:768px) {  
+  .banner__titulo {
+    font-size: 100px;
+  }
+}
+
+@media(min-width:1024px) {  
+  .contenedor {
+    width: 1000px;
+  }
+  .banner__titulo {
+    font-size: 80px;
+  }
+  .banner__txt {
+    font-size: 30px;
+  }
+  .info {
+    margin-top: -530px;
+  }
+  .info__columna {
+    padding: 30px;
+  }
+  .info__titulo {
+    font-size: 40px;
+    text-align: center;
+  }
+
+@media(min-width:1280px) {
+  .contenedor {
+    width: 1200px;
+  }
+  
+  .banner .contenedor {
+    top: 40%;
+  }
+  .info {
+    margin-top: -220px;
+  }
+}
+
+
+
+
