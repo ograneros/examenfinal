@@ -1,0 +1,47 @@
+body{
+    background: #fff;
+}
+#contenedor{
+    max-width: 1360px;
+    min-height: 597px;
+    background: #fff;
+    margin: 0 auto;
+}
+#cabecera{
+    max-width: 1360px;
+    min-height: 70px;
+}
+#header{
+    width: 20%;
+    height: 70px;
+    background: #fff;
+    float: left;
+    color: darkorange;
+    /*margin: 0 auto;*/
+}
+#menu-h{
+    width: 80%;
+    height: 70px;
+    background: #000;
+    float: right;
+    margin: 0 auto;
+    color:#fff;
+    text-align: right;
+}
+#menu-v{
+    width: 20%;
+    height: 514px;
+    background: #2d2a29;
+    float: left;
+}
+#contenido{
+    width: 80%;
+    height: 514px;
+    background: #f5f0ee;
+    float: right;
+}
+#footer{
+    max-width: 1360px;
+    min-height: 40px;  
+    background: #424242;
+}
