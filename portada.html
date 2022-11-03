@@ -1,0 +1,47 @@
+<?php 
+include "conexion.php";
+include "restriccion.php";
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notificaciones</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minium-scale=1.0">
+  <link rel="stylesheet" href="css/portada.css">
+  
+</head>
+<body>
+    <div class="banner">
+     <img src="img/fondo.jpg" alt="">
+      <div class="contenedor">
+        <h2 class="banner__titulo">Bienvenido</h2>
+        <p class="banner__txt">Verifica tus Notificaciones</p>
+      </div>
+    </div>
+    <main class="main">
+      <div class="contenedor">
+          <?php 
+          $usu=$_SESSION['user_id'];
+          $con = mysql_query("select count(*) as total from recla where reclaso=0 and reclaus='$usu'");
+          $res=mysql_fetch_array($con);
+          $tot=$res['total'];
+          ?>
+        <section class="info">
+          <article class="info__columna">
+            <img src="img/notif_solucion.png" alt="" class="info__img">
+            <h2 class="info__titulo"><?php echo $tot." "; ?>Reclamos</h2>
+          </article>
+          <article class="info__columna">
+            <img src="img/notif_solucion.png" alt="" class="info__img">
+            <h2 class="info__titulo">Soluciones</h2>
+          </article>
+          <article class="info__columna">
+            <img src="img/notif_solucion.png" alt="" class="info__img">
+            <h2 class="info__titulo">Manual</h2>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+
